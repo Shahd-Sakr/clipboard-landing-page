@@ -1,0 +1,350 @@
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+    --Green500: hsl(171, 66%, 44%);
+    --Blue100: hsl(233, 100%, 69%);
+    --Gray700: hsl(210, 10%, 33%);
+    --Gray500: hsl(201, 11%, 66%);
+    --white: #ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+  background: var(--white);
+  color:var(--Gray500);
+  line-height:1.6;
+  text-align:center;
+}
+
+h1,h2,h3{
+  color: var(--Gray700);
+}
+button{
+  color: var(--white);
+  width: 15rem;
+  height: 3.5rem;
+  margin: auto;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  border: white;
+  margin: 1.5rem 1rem;
+}
+.btn-1{
+  background-color: var(--Green500);
+}
+.btn-1:hover{
+  box-shadow: 5px 5px 15px 0px var(--Green500);
+  cursor: pointer;
+}
+
+.btn-2{
+  background-color: var(--Blue100);
+}
+.btn-2:hover{
+  box-shadow: 5px 5px 15px 0px var(--Blue100);
+  cursor: pointer;
+}
+/* Container */
+
+.container{
+  width:100%;
+  max-width:1440px;
+  margin: auto;
+}
+body{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+h2{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+/*first section*/
+
+.hero{    
+  margin-bottom: 3rem;
+}
+.logo{
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem 5rem;
+  margin-bottom: 1.5rem;
+}
+.header-logo{
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5rem;
+}
+.hero .description,
+.snippets-section .snippets-article
+{
+    width: 85%;
+    margin: auto;
+    max-width: 900px;
+}
+.hero .description h1{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.hero .description p{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+/* end first section */
+
+
+/*start second section */
+
+/* the parent */
+.snippets-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5rem;
+    row-gap: 2rem;
+}
+/* first child */
+.snippets-section .snippets-article{
+  grid-area: 1/1/2/3;
+
+}
+
+.snippets-section .snippets-article p{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 0 2rem;
+    /* margin-bottom: 1.5rem; */
+    line-height: 2rem;
+    margin: auto;
+  }
+/* second child */
+.snippets-section .snippets-img{
+  grid-area: 2/1/3/2;
+}
+/* third child */
+.snippets-section .advantages-sec{
+  grid-area: 2/2/3/3;
+}
+.snippets-section .advantages-sec p{
+  margin: 1.5rem;
+  font-size: 1.2rem;
+  text-align: start;
+}
+.snippets-section .advantages-sec span{
+  display: block;
+  font-weight: 700;
+  font-size: 1.55rem;
+  color: var(--Gray700);
+  margin-bottom: .5rem;
+  text-align: start;
+}
+/* end second section */
+
+/* start third section */
+.access-anywhere-section{
+  margin: 5rem;
+}
+.access-anywhere-section p{
+    font-size: 1.2rem;
+    margin: 0 4rem;
+    padding: .5rem 7rem 2rem;
+}
+/* end third section */
+
+/* start fourth section */
+
+.workflow-section{
+    margin: 5rem;
+}
+.workflow-section p{
+  margin-bottom: 3rem;
+  
+}
+
+.workflow-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3.5rem;
+    padding: .5rem;
+    max-width: 85%;
+    text-align: center;
+    margin: auto;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.workflow-card{
+  flex-basis: 300px;
+}
+.workflow-items .workflow-card h3{
+  margin: 1.2rem 0 .7rem;
+
+}
+/* end fourth section */
+
+/* start fifth section */
+.partners-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.5rem;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+.partners-section .partners-items{
+    min-width: 200px;
+    margin-bottom: 1rem;
+}
+/* end fifth section */  
+
+/* start the last section */
+.download-section{
+    margin: 2rem auto;
+}
+.download-section p{
+    max-width: 65%;
+    min-width: 30%;
+    text-align: center;
+    margin: auto;
+}
+/* end the last section */
+
+/* start the footer */
+.footer{
+  background-color: #f5f6f8;
+}
+
+.top-footer{
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* اللوجو */
+.footer-logo img{
+  width: 50px;
+}
+
+ .footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: start;
+    gap: 20px 60px;
+    max-height: 100px;
+
+}
+.footer-nav ul li a{
+    color: #85898e;
+    padding: 10px;
+    text-decoration: none;
+}
+.social-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+/* end footer */
+@media (max-width:750px) {
+  .logo{
+    padding: 0;
+    margin-bottom: auto;
+      
+  }
+  .hero .description,
+  .snippets-section .snippets-article
+  {
+      width: 100%;
+  }
+  .hero .description h1{
+      font-size: 2rem;
+      margin: 0rem 1rem 1rem;
+  }
+  .hero .description p{
+      font-size: 1.07rem;
+      font-weight: lighter;
+      padding: 0 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.6rem;
+  }
+  .snippets-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.snippets-section .snippets-article p{
+    font-size: 1.07rem;
+    padding: 0 1rem;
+    line-height: 1.7rem;
+  }
+.snippets-section .snippets-img img,
+.access-anywhere-section .access-anywhere-img img{
+  width: 100vw;
+}
+.snippets-section .advantages-sec p,
+.snippets-section .advantages-sec span
+{
+    text-align: center;
+}
+.access-anywhere-section{
+    margin: auto;
+}
+.access-anywhere-section p{
+    font-size: 1.07rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.workflow-section {
+   margin: auto;
+}
+.download-section p{
+    max-width: 100%;
+    min-width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+.top-footer{
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-logo img{
+  width: 50px;
+}
+.footer-nav ul{
+    flex-wrap: nowrap;
+    align-items: center;
+    max-height: max-content;
+    margin: 1.5rem;
+
+} 
+}
