@@ -18,6 +18,21 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+.skip-link{
+  position:absolute;
+  left:-999px;
+}
+
+.skip-link:focus{
+  text-decoration: none;
+  left:10px;
+  top:10px;
+  background:black;
+  color:white;
+  padding:10px;
+  z-index:1000;
+}
+
 body{
   background: var(--white);
   color:var(--Gray500);
